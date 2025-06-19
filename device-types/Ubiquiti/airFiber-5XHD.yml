@@ -1,7 +1,7 @@
 ---
 manufacturer: Ubiquiti
 model: airFiber 5XHD
-slug: ubiquiti-airfiber-af-5xhd
+slug: ubiquiti-airfiber-5xhd
 part_number: AF-5XHD
 comments: |
   ath0 is setup to use ieee802.11ax as LTE currently doesn't allow wireless
@@ -18,6 +18,8 @@ interfaces:
   - name: eth0
     label: Ethernet
     type: 1000base-t
+    poe_mode: pd
+    poe_type: passive-48v-4pair
   - name: ath0
     label: Wireless
     type: ieee802.11ax

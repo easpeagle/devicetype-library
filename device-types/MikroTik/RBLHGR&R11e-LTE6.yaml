@@ -18,5 +18,7 @@ comments: |
 interfaces:
   - name: ether1
     type: 100base-tx
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
   - name: lte1
     type: lte
